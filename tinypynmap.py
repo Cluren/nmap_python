@@ -27,7 +27,7 @@ st.write(fr)
 st.close()
 
 #csv文件转字典格式数据存入数据库
-with open('result.csv','r',encoding='utf-8')as csvfile:
+with open(fname,'r',encoding='utf-8')as csvfile:
     reader=csv.DictReader(csvfile)
     counts=0
     for each in reader:
